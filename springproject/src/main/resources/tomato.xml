@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--
 
 
     <bean id="lbd" class="a03cjbasics.ListImplementation">
@@ -22,6 +23,7 @@
         <property name="service" ref="sero"/>
     </bean>
 
+-->
 
 
 
@@ -35,7 +37,7 @@
     </bean>
 
     <bean id="gc" class="a03cjbasics.Mobile">
-        <property name="sim" ref="nc"/>
+        <property name="sim" ref="wc"/>
     </bean>
 
 

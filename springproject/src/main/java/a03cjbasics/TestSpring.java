@@ -20,7 +20,7 @@ public class TestSpring {
 		ClassPathXmlApplicationContext c
 		=new ClassPathXmlApplicationContext("tomato.xml");
 		Mobile m = c.getBean(Mobile.class);
-		m.makeCall();
+		m.makeCall();//this is fate, youir logic
 		
 		
 		/*
