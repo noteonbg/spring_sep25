@@ -1,0 +1,43 @@
+Bank and Branch relationship 
+1. Bank ( bankId, BankName, RBI License No, Set<String> Directors, List<Branch> branches)
+2. Branch (bankid, Branch IFSC, Address1, Address2, Address3, City, Pincode)
+
+A Bank has many Branches.
+Each Branch belongs to one Bank.
+
+1. Create a Bank
+Creates a new bank.
+
+2. Get all Banks
+Returns a list of all banks.
+
+3. Get a Bank by ID (with Branches)
+gets  a specific bank and its associated branches.
+
+
+4. Add a Branch to a Bank
+input typically is a bankid and branch info
+
+
+5. Get All Branches of a Bank
+Function: Lists all branches for a given bank.
+
+6. Delete a Branch
+Function: Deletes a specific branch.
+
+7. Update Branch Details
+How many service classes may be one for Bank and another for Branches.
+
+how will this problem statement look 
+in core java
+in spring
+in spring boot
+in jdbc.
+in jpa
+after applying security.
+after unit testing
+convert this into  microservices 
+
+
+
+

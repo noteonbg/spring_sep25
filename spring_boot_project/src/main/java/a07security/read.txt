@@ -1,0 +1,15 @@
+security
+1. who are you
+2. what you can access.
+
+for encrypting pasword...
+https://bcrypt-generator.com/
+
+pp.security.password=$2a$10$DowJf0J8J/N3Ty9sKQ9d8e.R7VKjvqco4qx2nD48zCWZo3fHugOty
+
+
+@Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+

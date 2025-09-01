@@ -1,0 +1,44 @@
+project/
+├── src/
+│   ├── main/
+│   │   ├── java/com/poc/
+│   │   │   ├── config/
+│   │   │   │   ├── SecurityConfig.java
+│   │   │   │   ├── JwtAuthenticationFilter.java
+│   │   │   │   └── JwtUtils.java
+│   │   │   │
+│   │   │   ├── controller/
+│   │   │   │   ├── AuthController.java
+│   │   │   │   ├── InvestmentController.java
+│   │   │   │   └── AdminController.java
+│   │   │   │
+│   │   │   ├── dto/
+│   │   │   │   ├── LoginRequest.java
+│   │   │   │   ├── RegisterRequest.java
+│   │   │   │   └── InvestmentDto.java
+│   │   │   │
+│   │   │   ├── entity/
+│   │   │   │   ├── User.java
+│   │   │   │   └── Investment.java
+│   │   │   │
+│   │   │   ├── exception/
+│   │   │   │   ├── GlobalExceptionHandler.java
+│   │   │   │   └── ResourceNotFoundException.java
+│   │   │   │
+│   │   │   ├── repository/
+│   │   │   │   ├── UserRepository.java
+│   │   │   │   └── InvestmentRepository.java
+│   │   │   │
+│   │   │   ├── service/
+│   │   │   │   ├── AuthService.java
+│   │   │   │   ├── InvestmentService.java
+│   │   │   │   └── AdminService.java
+│   │   │   │
+│   │   │   └── PocApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── data.sql
+│   │
+│   └── test/java/…
+└── pom.xml

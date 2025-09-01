@@ -1,0 +1,94 @@
+
+ask?
+
+1. name.
+2. years of experience.
+3. expectation from the training program.
+4. how is life with code generation tools..   thoughts...
+
+
+----------------------------
+
+0. know your folder structure..
+where will your project folders be present, which is project folder, which is not.
+know which java version do you have, which maven version do you have..
+
+
+1. ensure springproject is copied  in your working folder and see whether it works.
+
+2. ensure springbootproject is copied, in your working folder and see whether it works.
+
+3. open .m2 folder. and see the location
+homefolder\.m2\repository\com\h2database\h2\2.3.232 , do you see h2xxx.jar
+
+4. come to the command prompt and check is h2 running or not..
+
+5. create a database called training_poc.db... 
+5.1 h2 should be running   java -jar h2xxx.jar
+5.2 come to another command prompt and type.  java -cp h2.jar org.h2.tools.Shell
+database name give it as jdbc:h2:./whateverdatabasename
+
+
+-------------------------------------------------------
+
+approach.
+
+we will understand existing code, and then try logic on new problem statement..
+
+
+6. think how many files you need to create for a project... and what is basis for decision.
+
+7. in a new project put all the spring related dependancies and see whether it works..
+
+8. there is  a folder called a01archcode in the src/main/java , try to figure out what it is  and move the code into appropriate packages
+and make it work.. is it a spring or spring boot related project.
+
+9. a02accscenario unerstand the code.. and add a functionality called updateAccount .. think which all files needs to change
+and why, how.. and do it..
+
+10. convert the a01archcode and a02accscenario into spring based code.
+
+11. understand the code in a04configuration, a05lifeccle, a06messageresourceevents, a07stereotypes, 08properties, and a09qualifieer packages.
+
+12. a10spring jdbc adventure code, understand it and implement the jdbc in a01archcode and a02accscenario packages.
+
+--------------------------------------------------------------------------------------------------
+
+13. now think of the a02casestudy.txt and what will be your packages and 
+get a jdbc implementation done on the case study.
+
+14. convert that into jpa code..
+
+
+15. run the packages in spring boot project  
+a00xxx to a03basicxx.. there are bugs in the a02basicpoc
+and a03com.poc.. in the adding investment controller
+function fix it.
+
+16. run the package a04onetoone_mapping and see
+how it works...
+add a mechanism to add a citizen information and adhar
+card details and also provide a mechanism to
+change the person name and age. all the layers
+need to reflect the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

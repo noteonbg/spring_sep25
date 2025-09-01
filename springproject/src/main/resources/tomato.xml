@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="lbd" class="a03cjbasics.ListImplementation">
+    </bean>
+
+    <bean id="mbd" class="a03cjbasics.MapImplementation">
+    </bean>
+
+    <bean id="jbd" class="a03cjbasics.JDBCImplemntation">
+    </bean>
+
+    <bean id="sero" class="a03cjbasics.Service">
+        <property name="d" ref="jbd"/>
+    </bean>
+
+    <bean id="po" class="a03cjbasics.Presentation">
+        <property name="service" ref="sero"/>
+    </bean>
+
+
+
+
+
+    <bean id="wc" class="a03cjbasics.Sim">
+        <property name="simno" value="1"/>
+    </bean>
+
+    <bean id="nc" class="a03cjbasics.Sim">
+        <property name="simno" value="2"/>
+    </bean>
+
+    <bean id="gc" class="a03cjbasics.Mobile">
+        <property name="sim" ref="nc"/>
+    </bean>
+
+
+</beans>
+
+
+ 

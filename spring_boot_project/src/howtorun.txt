@@ -1,0 +1,177 @@
+ App runs at: http://localhost:8080
+ Security is enabled: You need to login to get a JWT token.
+ You have two users in data.sql:
+
+   admin / password
+   user1 / password
+
+
+
+ 1. Login (Get JWT Token)
+
+#Endpoint
+POST /auth/login
+
+
+#Request Body (JSON)
+
+json
+{
+  "username": "user1",
+  "password": "password"
+}
+
+
+#Response
+
+json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
+}
+
+
+# Save this token for use in all secured requests.
+
+---
+
+2. Get User Profile
+
+#🔗 Endpoint
+GET /api/users/me
+
+
+#Headers
+Authorization: Bearer <your_token>
+
+
+#Response
+json
+{
+  "id": 2,
+  "username": "user1",
+  "email": "user1@example.com",
+  "role": "ROLE_USER",
+  ...
+}
+
+
+---
+
+3. Get All Investments
+
+#Endpoint
+
+
+GET /api/investments
+
+
+#Headers
+
+Authorization: Bearer <your_token>
+
+
+#Response
+
+json
+[
+  {
+    "id": 1,
+    "investmentType": "Stock",
+    "assetName": "Tesla Inc",
+    "amountInvested": 1000.00,
+    "currentValue": 1500.00,
+    ...
+  },
+  ...
+]
+
+
+---
+
+4. Add a New Investment
+#Endpoint
+POST /api/investments
+
+
+#Headers
+Authorization: Bearer <your_token>
+Content-Type: application/json
+
+#📩 Request Body
+json
+{
+  "investmentType": "Crypto",
+  "assetName": "Bitcoin",
+  "amountInvested": 5000.00,
+  "currentValue": 5200.00,
+  "dateOfInvestment": "2025-01-01",
+  "maturityDate": "2030-01-01"
+}
+
+
+---
+
+✅ 5. Update Investment
+# Endpoint
+PUT /api/investments/{id}
+
+
+For example:
+
+
+PUT /api/investments/1
+
+# Request Body
+
+json
+{
+  "investmentType": "Stock",
+  "assetName": "Tesla Inc",
+  "amountInvested": 1200.00,
+  "currentValue": 1800.00,
+  "dateOfInvestment": "2024-01-01",
+  "maturityDate": "2026-01-01"
+}
+
+
+# Headers
+Authorization: Bearer <your_token>
+Content-Type: application/json
+
+
+---
+
+6. Delete Investment
+
+# Endpoint
+DELETE /api/investments/{id}
+Example:
+
+DELETE /api/investments/1
+
+#Headers
+Authorization: Bearer <your_token>
+
+
+---
+
+Notes on Authorization
+
+All /api/ endpoints are secured and require JWT in Authorization header.
+Only /auth/login is public.
+
+---
+
+
+
+| Action            | URI                     | Method | Auth Required |
+| ----------------- | ----------------------- | ------ | ------------- |
+| Login             | /auth/login           | POST   | ❌             |
+| Get Profile       | /api/users/me         | GET    | ✅             |
+| Get Investments   | /api/investments      | GET    | ✅             |
+| Add Investment    | /api/investments      | POST   | ✅             |
+| Update Investment | /api/investments/{id} | PUT    | ✅             |
+| Delete Investment | /api/investments/{id} | DELETE | ✅             |
+
+---
+
