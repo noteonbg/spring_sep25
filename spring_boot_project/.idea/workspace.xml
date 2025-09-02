@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="" />
+    <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/BankApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/dao/BankRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/model/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/model/BankStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/service/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/a01loanapp/LoanAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a01loanapp/LoanAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,35 +53,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DebugThings.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Freak.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JwtCalcApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JwtCalculatorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JwtSumApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoanAppApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PocApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecurityTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StartApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestCrud.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestManyToOne.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestOneToOne.executor&quot;: &quot;Run&quot;,
-    &quot;Application.a03com.poc.PocApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.a08secfromdb.SecurityTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.basicpoc.PocApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoanControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoanServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/spring_sep25/spring_boot_project/src/main/java/a11doubt&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BankApp.executor": "Run",
+    "Application.DebugThings.executor": "Run",
+    "Application.Freak.executor": "Run",
+    "Application.JwtCalcApplication.executor": "Run",
+    "Application.JwtCalculatorApplication.executor": "Run",
+    "Application.JwtSumApplication.executor": "Run",
+    "Application.LoanAppApplication.executor": "Run",
+    "Application.PocApplication.executor": "Run",
+    "Application.SecurityTest.executor": "Run",
+    "Application.StartApp.executor": "Run",
+    "Application.TestCrud.executor": "Run",
+    "Application.TestManyToOne.executor": "Run",
+    "Application.TestOneToOne.executor": "Run",
+    "Application.a03com.poc.PocApplication.executor": "Run",
+    "Application.a08secfromdb.SecurityTest.executor": "Run",
+    "Application.basicpoc.PocApplication.executor": "Run",
+    "JUnit.LoanControllerTest.executor": "Run",
+    "JUnit.LoanServiceTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/spring_sep25/spring_boot_project/src/main/java/a11doubt"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="bank.model" />
       <recent name="a11doubt.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -92,7 +104,20 @@
       <recent name="a05onetomany.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DebugThings">
+  <component name="RunManager" selected="Application.BankApp">
+    <configuration name="BankApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bank.BankApp" />
+      <module name="spring_boot_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DebugThings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a11doubt.DebugThings" />
       <module name="spring_boot_project" />
@@ -119,32 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtCalculatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a10jwt.JwtCalculatorApplication" />
-      <module name="spring_boot_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a10jwt.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JwtSumApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a09jwt.JwtSumApplication" />
-      <module name="spring_boot_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a09jwt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoanAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a01loanapp.LoanAppApplication" />
       <module name="spring_boot_project" />
@@ -158,13 +157,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestManyToOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a05onetomany.TestManyToOne" />
+      <module name="spring_boot_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a05onetomany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankApp" />
+        <item itemvalue="Application.TestManyToOne" />
         <item itemvalue="Application.DebugThings" />
         <item itemvalue="Application.LoanAppApplication" />
         <item itemvalue="Application.JwtCalcApplication" />
-        <item itemvalue="Application.JwtCalculatorApplication" />
-        <item itemvalue="Application.JwtSumApplication" />
       </list>
     </recent_temporary>
   </component>

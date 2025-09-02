@@ -25,18 +25,18 @@ INSERT INTO aadhaar_card (aadhaar_number, citizen_id) VALUES
 
 -- Insert pharmacies
 INSERT INTO pharmacy (id, name, location) VALUES
-(1, 'Apollo Pharmacy', 'Mumbai'),
-(2, 'MedPlus', 'Hyderabad'),
-(3, '1MG', 'Bengaluru');
+(11, 'Apollo Pharmacy', 'Mumbai'),
+(22, 'MedPlus', 'Hyderabad'),
+(33, '1MG', 'Bengaluru');
 
 -- Insert medicines
 INSERT INTO medicine (name, price, pharmacy_id) VALUES
-('Paracetamol', 25.00, 1),
-('Amoxicillin', 38.50, 1),
-('Dolo 650', 18.00, 2),
-('Cetrizine', 15.00, 2),
-('Azithromycin', 60.00, 3),
-('Metformin', 22.00, 3);
+('Paracetamol', 25.00, 11),
+('Amoxicillin', 38.50, 11),
+('Dolo 650', 18.00, 22),
+('Cetrizine', 15.00, 22),
+('Azithromycin', 60.00, 33),
+('Metformin', 22.00, 33);
 
 --password123 is the password--
 INSERT INTO hospitalstaff(username, password, role)
