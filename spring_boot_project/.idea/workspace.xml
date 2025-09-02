@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/DebugThings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a11doubt/txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/jpmcspringmindmap.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/jpmcspringmindmap.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
