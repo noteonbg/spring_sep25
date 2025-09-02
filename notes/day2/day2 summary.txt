@@ -107,7 +107,159 @@ status code.
 why tis is architecture we wanted..
 
 we will join back 1.15PM.
-repo updated.. all images are there in reference telescope folder..
+repo updated.. all images are there in reference/a01telescope folder..
+
+
+
+programmer..
+
+1. can he  take English paragraph and convert that into functions
+and variables which fit in some architecture.
+
+
+Bank
+bankid
+bankname
+Address bank
+rbiapprovalid.
+headqtrs city
+
+
+1. add a Bank.
+2. update a bank.. address headqtrs..
+3. get all Banks based on a city.
+
+
+people who dont give sufficient details are going to waste lot of people
+time.
+
+
+patience.. part..
+
+
+1. pom.xml
+2. application.properties or application.yaml 
+3. schema.sql and data.sql 
+
+Spring boot will scan our classpath and what all things
+has been put and tell Hey i will autoconfigure for you..
+
+
+
+relax..
+
+how about our packages..
+
+
+create a  package bank
+crate a package bank.service.
+create a package bank.modele
+create  package bank.dao.
+crate a package bank.controller
+
+
+Annotation
+1. symbolisms in a system. and we are ready to use it because
+we like the benefit we  also when the benefit will come.
+
+
+
+
+
+1. spring boot application worked...proof is data.sql and schema.sql worked
+2. web container ran.
+3. we want to focus on service ,model and jpa part so let us let
+the web part relax for sometime, let it not run..
+
+
+1. got pom.xml
+2. got settings.xml
+3. got spring boot application working.
+4. think what you will attempt and if possible dont let the system hog
+other things.
+
+
+
+
+
+
+service functon design has to be 5/ 5 not even 4.9/5we should rigour
+so think and collaborate..
+
+
+superset annotation in object creation,called 
+@Component
+hey create the object of the class.
+
+specialized variations..
+
+1. @Service.. indicates the code is a service layer code.. If I did not write
+what will happen, nothing will happen. object will not created ok i will use
+@component ok use it.. it will work properly
+
+we have told spring create the object..
+before we go  further how about asking spring hey give me the object
+in spring boot.
+
+
+hey spring after you created the objects let me know...
+the way we do it in spring boot is
+
+1. implement an interface commandline runner.
+
+2. tell in the class which object you want from spring.. you must
+know which object spring has got..
+
+3. in the run method, use the object spring has givenand call he function.
+
+
+
+
+1. did you get clarity on service.
+2. did you get clarify on  model.
+3.did you create your entity
+4.did you create a repository interface.
+5. did you wire repository in service.
+6. in service, inside the service function did you call repository functions.
+7. ok did you call the service function and prove did it work.
+
+
+command line runner
+1. I have not written any controller function.
+2. I have servie object created by spring, and I wanted spring to give me
+this object ...
+3. so in spring boot, what we do is we implement command line runner
+interface in the place where you have written the main function.
+4. it will force me to write a run method.
+5. what spring tells after spring created objects and wired.. it will
+call the run method..
+6. autowired service.. that means I am telling spring hey whatever service
+object give it to me here.... in the run method i am using that object..
+and calling the service function..
+
+1. ask spring to create objects.
+2. tell it to wire
+3. ask spring hey give me the object which you wired..
+4. using the object call a function which is of interest to us
+
+
+summary of all these things is..
+
+1. you have be patient in designing service function.
+1.1once we designed service we must have clarity what it means to fail or succeed.
+1.2 you dont need to touch controller or dao until you are clear about
+service function and models.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
