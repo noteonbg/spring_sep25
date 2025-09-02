@@ -1,0 +1,127 @@
+1. zoom out.. in terms of architecture.
+2. we get "clarity"    creation of objects and wiring.
+3. small program which works on spring first and we will move to spring
+boot 
+4. we will ensure.. we write a code which will 
+
+1. business layer
+2. it will use some models.
+3. model will mapped as an entity.
+4. dao layer..
+5. REST controller layer on top business layer..
+
+when somebody tells code..
+
+1. what is my entry point.
+2. what is exit point.
+
+for any topic X.. technically
+
+1. tell what X is as a concept
+2. give an example
+3. then think about syntax.
+4. look at best practices.
+5. logic building.
+
+easiest way to identify models in existing projects.
+1. look at input and return type of service functions..
+
+imitate first then improve..
+
+
+horror is solving the problem without knowing the context, this a guaranteed
+wrong solution.
+
+I want a feature to add a new Bank.. business logic.
+
+
+very hard to overcome stupid mistakes..
+
+in all ides... it is possible to call a function and then define it.
+
+call a function, I can think what should function take, what function
+should return what does it mean for the caller and I push the logic
+to a lower priority...
+
+
+
+
+
+
+
+spring or spring boot advantages.
+1. loose coupling ( bread board ) --- architecture..
+inversion of control (ioc) and dependency injection (di)
+
+2.x+spring = x becomes easier.
+x= jdbc, jpa, web, batch processing, messaging...
+integrates well with existing technology.   == template design pattern.
+
+3. aop ... aspect oriented programming..  in your project code you
+can target some part of code by some condition and apply some rules..
+look at code present in poc.controllers.auth and start applying security
+on all functions present in all classes here.
+
+
+
+security is applied on controllers by using aop.
+
+who called the controller functions.. anwswer is spring when an event
+occurred..
+
+anybody who tells I  am calling the function, torture him by asking
+show me the place where you called.
+
+void f1()
+{
+
+
+}
+
+f1();
+
+
+
+
+
+
+
+
+
+1. can you recognize controller class in your project.
+2. can you look at some controller functions in your controller class.
+3. can you identify some models.
+4. look at what your controller function return...
+
+
+
+crateLoan returned a Loan object.
+updateLoan returned a ResponseEntity, what is reponseEntity, very simple a data type in spring web based world.
+what does this data type do..
+it acts like a box for you.. it holds two things, one your model + http response
+status code.
+
+
+
+1. in my controller class, we put have put the object of service..
+why tis is architecture we wanted..
+
+we will join back 1.15PM.
+repo updated.. all images are there in reference telescope folder..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
