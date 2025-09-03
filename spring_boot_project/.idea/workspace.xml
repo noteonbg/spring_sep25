@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/a01loanapp/service/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a01loanapp/service/LoanService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bank/BankApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/BankApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/dao/BankRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/dao/BankRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/controller/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/controller/BankController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <recent name="a05onetomany.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BankApp">
+  <component name="RunManager" selected="Application.JwtCalcApplication">
     <configuration name="BankApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bank.BankApp" />
       <module name="spring_boot_project" />
@@ -118,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a01loanapp.LoanAppApplication" />
+    <configuration name="JwtCalcApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a10jwt.JwtCalcApplication" />
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a01loanapp.*" />
+          <option name="PATTERN" value="a10jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,39 +145,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SbBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a11freak.SbBootApp" />
+    <configuration name="LoanControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a11freak.*" />
+          <option name="PATTERN" value="a01loanapp.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="a01loanapp.controller" />
+      <option name="MAIN_CLASS_NAME" value="a01loanapp.controller.LoanControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a00anotherpoc.StartApp" />
+    <configuration name="LoanServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a00anotherpoc.*" />
+          <option name="PATTERN" value="a01loanapp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="a01loanapp.service" />
+      <option name="MAIN_CLASS_NAME" value="a01loanapp.service.LoanServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JwtCalcApplication" />
+        <item itemvalue="JUnit.LoanControllerTest" />
+        <item itemvalue="JUnit.LoanServiceTest" />
         <item itemvalue="Application.BankApp" />
         <item itemvalue="Application.PocApplication" />
-        <item itemvalue="Application.LoanAppApplication" />
-        <item itemvalue="Application.SbBootApp" />
-        <item itemvalue="Application.StartApp" />
       </list>
     </recent_temporary>
   </component>
@@ -190,5 +195,16 @@
       <updated>1756387148571</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bank/service/BankService.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

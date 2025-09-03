@@ -21,6 +21,8 @@ public class LoanService {
     }
 
     public List<Loan> getAllLoans() {
+
+        System.out.println("get all loans of service");
         return loanRepository.findAll();
     }
 

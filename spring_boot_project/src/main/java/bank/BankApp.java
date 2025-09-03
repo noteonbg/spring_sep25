@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
-public class BankApp implements CommandLineRunner
+public class BankApp// implements CommandLineRunner
  {
 
     public static void main(String[] args)
@@ -23,28 +23,35 @@ public class BankApp implements CommandLineRunner
 
 
         SpringApplication springApplication =new SpringApplication(BankApp.class);
-        springApplication.setWebApplicationType(WebApplicationType.NONE);
+        //springApplication.setWebApplicationType(WebApplicationType.NONE);
         springApplication.run(args);
 
     }
 
       //Dependancy injection
 
+     @Autowired
+    private BankService bankService;
 
-    //private BankService bankService;
-    @Autowired
     private BankRepository bankRepository;
 
         public void run(String... args) throws Exception {
 
-            String abc ="mum";
+            Bank updatedBank =new
+                    Bank(1,"A","newadd","newheadoffice",3);
+            BankStatus bankStatus = bankService.updateBank(updatedBank);
+            System.out.println(bankStatus.getStatusCode());
+
+
+
+            /*String abc ="mum";
             List<Bank> banks = bankRepository.findByheadoffice(abc);
             for(Bank b: banks)
             {
                 System.out.println(b.getBankId());
 
             }
-
+*/
 
 
 
