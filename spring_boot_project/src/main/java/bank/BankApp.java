@@ -10,6 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -36,26 +37,24 @@ public class BankApp implements CommandLineRunner
 
         public void run(String... args) throws Exception {
 
+            String abc ="mum";
+            List<Bank> banks = bankRepository.findByheadoffice(abc);
+            for(Bank b: banks)
+            {
+                System.out.println(b.getBankId());
+
+            }
+
+
+
+
+/*
             int bankId =1;
             String banknewAdress="x";
             String headQrs ="y";
             Bank updatedBank = new Bank(bankId,"",banknewAdress,headQrs,3);
-            Optional<Bank> box = bankRepository.findById(bankId);
-            if(box.isEmpty())
-            {
-                System.out.println("ok id not found");
-            }
-            else
-            {
-                Bank fromdb = box.get();
-                fromdb.setAddress(updatedBank.getAddress());
-                fromdb.setHeadoffice(updatedBank.getHeadoffice());
-                bankRepository.save(fromdb);// confirm the update..
-                System.out.println("bank update succssful");
 
-
-            }
-
+*/
 
 
 
