@@ -5,6 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/MedicalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/basic/MedicalUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/controller/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/repository/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resources/freak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/junk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/MedicalApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/basic/MedicalUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/controller/PatientControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/service/PatientServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +30,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -64,6 +78,7 @@
     "Application.a03com.poc.PocApplication.executor": "Run",
     "Application.a08secfromdb.SecurityTest.executor": "Run",
     "Application.basicpoc.PocApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.LoanControllerTest.executor": "Run",
     "JUnit.LoanServiceTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,7 +86,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/spring_sep25/spring_boot_project/src/main/java/a11doubt"
+    "last_opened_file_path": "F:/spring_sep25/spring_boot_project/src/test/java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,13 +95,14 @@
       <recent name="a11doubt.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring_sep25\spring_boot_project\src\test\java" />
+      <recent name="F:\spring_sep25\spring_boot_project\src\main\java" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a11doubt" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a09jwt\config" />
-      <recent name="F:\spring_sep25\spring_boot_project\src\main\java" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a00anotherpoc" />
-      <recent name="F:\spring_sep25\spring_boot_project\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\spring_sep25\spring_boot_project\src\main\resources\static" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a03com\poc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -97,7 +113,7 @@
       <recent name="a05onetomany.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BankApp">
+  <component name="RunManager" selected="Application.StartApp">
     <configuration name="BankApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bank.BankApp" />
       <module name="spring_boot_project" />
@@ -124,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtCalcApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a10jwt.JwtCalcApplication" />
+    <configuration name="LoanAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a01loanapp.LoanAppApplication" />
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a10jwt.*" />
+          <option name="PATTERN" value="a01loanapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a01loanapp.LoanAppApplication" />
+    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a00anotherpoc.StartApp" />
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a01loanapp.*" />
+          <option name="PATTERN" value="a00anotherpoc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.BankApp" />
         <item itemvalue="Application.TestManyToOne" />
         <item itemvalue="Application.DebugThings" />
         <item itemvalue="Application.LoanAppApplication" />
-        <item itemvalue="Application.JwtCalcApplication" />
       </list>
     </recent_temporary>
   </component>
