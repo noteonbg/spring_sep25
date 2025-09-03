@@ -37,7 +37,7 @@ class LoanControllerTest {
     void testGetAllLoans() {
         when(loanService.getAllLoans()).thenReturn(List.of(sampleLoan));
 
-        List<Loan> result = loanController.getAllLoans();
+        List<Loan> result = loanController.horrible123();
 
         assertEquals(1, result.size());
         verify(loanService).getAllLoans();

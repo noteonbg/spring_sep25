@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4659671-fb7e-4f22-a735-2521a6f5739b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/MedicalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/basic/MedicalUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/repository/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/a10testing/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resources/freak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/junk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/MedicalApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/basic/MedicalUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/controller/PatientControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/a10testing/service/PatientServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a11freak/SbBootApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/a12junk/PatheticService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bank/controller/BankController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/a01loanapp/LoanAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a01loanapp/LoanAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/a01loanapp/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a01loanapp/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/a01loanapp/service/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a01loanapp/service/LoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/BankApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/BankApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/a01loanapp/controller/LoanControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/a01loanapp/controller/LoanControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,6 +66,7 @@
     "Application.JwtSumApplication.executor": "Run",
     "Application.LoanAppApplication.executor": "Run",
     "Application.PocApplication.executor": "Run",
+    "Application.SbBootApp.executor": "Run",
     "Application.SecurityTest.executor": "Run",
     "Application.StartApp.executor": "Run",
     "Application.TestCrud.executor": "Run",
@@ -86,7 +83,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/spring_sep25/spring_boot_project/src/test/java"
+    "last_opened_file_path": "F:/spring_sep25/spring_boot_project/src/main/java/bank"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,11 +92,11 @@
       <recent name="a11doubt.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring_sep25\spring_boot_project\src\main\java\bank" />
       <recent name="F:\spring_sep25\spring_boot_project\src\test\java" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a11doubt" />
       <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a09jwt\config" />
-      <recent name="F:\spring_sep25\spring_boot_project\src\main\java\a00anotherpoc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\spring_sep25\spring_boot_project\src\main\resources\static" />
@@ -113,26 +110,13 @@
       <recent name="a05onetomany.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StartApp">
+  <component name="RunManager" selected="Application.BankApp">
     <configuration name="BankApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bank.BankApp" />
       <module name="spring_boot_project" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DebugThings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a11doubt.DebugThings" />
-      <module name="spring_boot_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a11doubt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,6 +137,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PocApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a02basicpoc.PocApplication" />
+      <module name="spring_boot_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a02basicpoc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SbBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a11freak.SbBootApp" />
+      <module name="spring_boot_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a11freak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a00anotherpoc.StartApp" />
       <module name="spring_boot_project" />
@@ -166,26 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestManyToOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a05onetomany.TestManyToOne" />
-      <module name="spring_boot_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a05onetomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.BankApp" />
-        <item itemvalue="Application.TestManyToOne" />
-        <item itemvalue="Application.DebugThings" />
+        <item itemvalue="Application.PocApplication" />
         <item itemvalue="Application.LoanAppApplication" />
+        <item itemvalue="Application.SbBootApp" />
+        <item itemvalue="Application.StartApp" />
       </list>
     </recent_temporary>
   </component>

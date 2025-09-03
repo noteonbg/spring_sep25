@@ -10,7 +10,8 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BankApp implements CommandLineRunner {
+public class BankApp //implements CommandLineRunner
+ {
 
     public static void main(String[] args)
     {
@@ -19,7 +20,7 @@ public class BankApp implements CommandLineRunner {
 
 
         SpringApplication springApplication =new SpringApplication(BankApp.class);
-        springApplication.setWebApplicationType(WebApplicationType.NONE);
+        //springApplication.setWebApplicationType(WebApplicationType.NONE);
         springApplication.run(args);
 
     }
@@ -27,7 +28,7 @@ public class BankApp implements CommandLineRunner {
     @Autowired  //Dependancy injection
     private BankService bankService;
 
-    @Override
+
     public void run(String... args) throws Exception {
 
         Bank bank =new Bank(10,"no","inagar","blore",23);

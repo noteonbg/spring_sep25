@@ -26,13 +26,13 @@ public class LoanController {
         this.loanService = loanService;
     }
 
-    @GetMapping
-    public List<Loan> getAllLoans() {
+    //@GetMapping  //registerred for the event
+    public List<Loan> horrible123() {
         return loanService.getAllLoans();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Loan> getLoanById(@PathVariable Long id) {
+    public ResponseEntity<Loan> getLoanById( Long id) {
         return loanService.getLoanById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -41,7 +41,7 @@ public class LoanController {
     @PostMapping
     public Loan createLoan(@RequestBody Loan loan) {
 
-
+        System.out.println("create laon function xyz");
         return loanService.createLoan(loan);
     }
 

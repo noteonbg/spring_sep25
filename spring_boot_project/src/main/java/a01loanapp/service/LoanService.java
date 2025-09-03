@@ -4,6 +4,7 @@ package a01loanapp.service;
 
 import a01loanapp.model.Loan;
 import a01loanapp.repository.LoanRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.Optional;
 @Service
 public class LoanService {
 
+    @Autowired
     private final LoanRepository loanRepository;
 
     public LoanService(LoanRepository loanRepository) {
